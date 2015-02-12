@@ -5,7 +5,7 @@ var fs = require('fs')
  * Recursively requires files in a specified directory
  * 
  * @param {String}   - absolute path of directory to read through
- * @param {Srray}    - valid file extensions - may contain '.js', '.json' or both
+ * @param {Array}    - valid file extensions - may contain '.js', '.json' or both
  * @param {Object}   - object to assign modules to
  * @returns {Object} - the exports from all required files
  */
