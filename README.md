@@ -10,9 +10,7 @@ Returns and object containing all module.exports from .js/.json files within a d
 
 ```js
 var reqdirp = require('reqdirp')
-  , path = require('path')
-  , absolutePath = path.join(__dirname,'path/to/some/directory')
-  , modules = reqdirp(absolutePath)
+  , modules = reqdirp('./path/to/some/directory')
   
 // `modules` will now be an object containing all exports from every .js and .json file
 // reqdirp excludes index.js, package.json, and node_modules
@@ -23,7 +21,7 @@ var reqdirp = require('reqdirp')
 
 Type: `String`
 
-Absolute path of directory to be required
+Path of directory to be required. If not absolute, will be relative to `process.cwd()`
 
 #### exts
 
