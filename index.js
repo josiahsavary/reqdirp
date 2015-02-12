@@ -10,6 +10,7 @@ var fs = require('fs')
  * @returns {Object} - the exports from all required files
  */
 module.exports = function reqdirp (dir, exts, exports) {
+  if (/^\.\//.test(dir)) dir = path.join(process.cwd(), dir)
   if (!exts) exts = ['.js','.json']
   if (!exports) exports = {}
   fs.readdirSync(dir).forEach(function (name) {
