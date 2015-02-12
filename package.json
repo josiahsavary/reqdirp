@@ -1,0 +1,26 @@
+{
+  "name": "reqdirp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josiahsavary/reqdirp.git"
+  },
+  "author": "Josiah Savary <hello@jsavary.com> (http://jsavary.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josiahsavary/reqdirp/issues"
+  },
+  "homepage": "https://github.com/josiahsavary/reqdirp",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^5.0.0"
+  }
+}
